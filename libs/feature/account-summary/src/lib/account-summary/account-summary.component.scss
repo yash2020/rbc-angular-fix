@@ -1,0 +1,16 @@
+table {
+  width: 100%;
+}
+
+th[scope='col'] {
+  border-bottom: 1px solid #333;
+}
+tr{
+  text-align: left;
+}
+tr th:last-child{
+  justify-content: space-between;
+}
+tr:nth-child(2n) {
+  background-color: #DEDEDE;
+}

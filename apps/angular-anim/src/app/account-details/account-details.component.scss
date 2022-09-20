@@ -1,0 +1,10 @@
+$gpadding : 5px;
+
+p {
+    background-color: blanchedalmond;
+    padding: 2px;
+    padding-left: $gpadding;
+}
+span {
+    padding-left: $gpadding;
+}
