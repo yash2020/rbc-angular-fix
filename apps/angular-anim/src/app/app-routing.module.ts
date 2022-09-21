@@ -9,7 +9,7 @@ import { AccountDetailsComponent } from './account-details/account-details.compo
 // fixed.
 const routes: Routes = [
   { path: '', component: AccountSummaryComponent },
-  { path: 'about', component: AboutComponent },
+  { path: 'about', component: AboutComponent,  },
   { path: 'account/:id', component: AccountDetailsComponent }
 ];
 

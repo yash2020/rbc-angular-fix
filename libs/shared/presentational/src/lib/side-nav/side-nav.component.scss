@@ -6,9 +6,15 @@ a {
   padding-top: $unit;
   padding-bottom: $unit;
   display: inline-block;
+
   &:hover {
-    background: $brand-bg;
+    background: $brand-bg-alt;
     color: white;
     transition: 0.3s;
+  }
+  &.active {
+  
+    background-color: $brand-bg;
+    color: white;
   }
 }

@@ -16,17 +16,19 @@ section {
 //done..!!
 .nav-offsite {
   @mixin a {
+    
     // TODO: 12. something's off with this include
     @include link();
     color: white;
-    padding-right: 10px;
+    &:last-child {
+      padding-right: $brand-padding; // using predefine Stander.
+    }
+  }
+  a{
+    padding-left: 5px; // Added to look Good.
     &:visited {
       color: white;
     }
-    &:last-child {
-      padding-right: $brand-padding;
-    }
-    
   }
 
 }
