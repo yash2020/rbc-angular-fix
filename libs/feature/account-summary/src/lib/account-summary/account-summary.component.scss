@@ -1,16 +1,37 @@
+@import 'theme';
+$brand-padding-unit: 10px;
+$select-width: 10rem;
+
 table {
   width: 100%;
-}
+  font-size: $font-size;
 
-th[scope='col'] {
-  border-bottom: 1px solid #333;
-}
-tr{
-  text-align: left;
-}
-tr th:last-child{
-  justify-content: space-between;
-}
-tr:nth-child(2n) {
-  background-color: #DEDEDE;
+  tr {
+    text-align: left;
+  }
+
+  tr td {
+    padding: $brand-padding-unit;
+  }
+
+  th[scope='col'] {
+    border-bottom: 1px solid #333;
+  }
+
+  tr:first-child th:last-child {
+    display: flex;
+    justify-content: space-between;
+  }
+  td{
+    width: calc(100%/3);
+  }
+  tr:nth-child(2n) {
+    background-color: #DEDEDE;
+  }
+
+  select {
+    display: flex;
+    font-size: $font-size;
+    width: $select-width;
+  }
 }
